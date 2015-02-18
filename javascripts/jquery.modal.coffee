@@ -59,7 +59,7 @@ class Modal
   close: (event) =>
     event?.preventDefault()
     event?.stopPropagation()
-    @hide()
+    @$modal.trigger('shown')
 
   keyup: (event) =>
     return if event.target.form?
