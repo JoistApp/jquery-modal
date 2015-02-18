@@ -117,7 +117,7 @@ Copyright 2014 Kevin Sylvestre
       if (event != null) {
         event.stopPropagation();
       }
-      return this.hide();
+      this.$modal.trigger('close');
     };
 
     Modal.prototype.keyup = function(event) {
